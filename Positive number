@@ -1,0 +1,76 @@
+import java.util.Scanner; 
+class example 
+{ 
+    public static void main(String args[]) 
+    { 
+       Scanner in=new Scanner(System.in); 
+       int number,negative=0,positive_even=0,positive_odd=0; 
+       while(true) 
+       { 
+           System.out.print("Enter number : ");  
+           number=in.nextInt(); 
+           if(number>0) 
+           { 
+                if(number%2==0) 
+                { 
+                    positive_even=positive_even+number; 
+                } 
+                else 
+                { 
+                    positive_odd=positive_odd+number; 
+                } 
+           } 
+           else if(number<0) 
+           { 
+                negative=negative+number; 
+           } 
+           else 
+           { 
+                break; 
+           } 
+       } 
+    System.out.println("Sum of negative numbers : "+negative); 
+    System.out.println("Sum of positive even numbers :   "+positive_even); 
+    System.out.println("Sum of positive odd numbers : "+positive_odd); 
+    } 
+} 
+import java.util.Scanner;
+
+Class Sum{
+
+public static void main(String[] args) {
+
+Scanner scn=new Scanner(System.in) ;
+
+int value,sumNeg=0,sumPosEve=0,sumPosOdd=0;
+
+while((value=scn.nextInt())!=0) {
+
+if(value*(-1)>0 ) {
+
+sumNeg+=value;
+
+}
+
+else{
+
+if(value%2==0){
+
+sumPosEve+=value;
+
+}
+
+else
+
+sumPosOdd+=value;
+
+}
+
+}
+
+System.out.println(“Negative Sum= ”+sumNeg);
+
+System.out.println(“Pos Even Sum= ”+sumPosEve) ;
+
+System.out.println(“Pos Odd Sum= ”+sumPisOdd) ;
+
